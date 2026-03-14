@@ -33,6 +33,12 @@
 .mainContainer .container .whatsapp:hover {
   color: rgb(5, 44, 8) !important;
 }
+.mainContainer .container .github:hover {
+  color: rgb(59, 59, 59) !important;
+}
+.mainContainer .container .linkedin:hover {
+  color: rgb(0, 44, 95) !important;
+}
 .mainContainer .container h1 {
   font-family: Audiowide;
 }/*# sourceMappingURL=footer.module.css.map */

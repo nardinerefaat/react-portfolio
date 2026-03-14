@@ -13,9 +13,8 @@
   border-radius: 10px;
   color: #fdfdfd;
 }
-.mainContainer .container h3 {
+.mainContainer .container p {
   margin-bottom: 20px;
-  font-family: Audiowide;
 }
 .mainContainer .container .items {
   display: flex;
@@ -42,4 +41,4 @@
   background: rgba(91, 101, 214, 0.7882352941);
   margin: 10px auto;
   border-radius: 5px;
-}/*# sourceMappingURL=shoppingFeatures.module.css.map */
+}/*# sourceMappingURL=education.module.css.map */
