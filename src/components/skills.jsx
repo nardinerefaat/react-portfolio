@@ -1,4 +1,3 @@
-import  {useState} from 'react'
 import styles from '../styles/skills.module.scss'
 import html from '../images/html.png'
 import css from '../images/css.png'

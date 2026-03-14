@@ -1,4 +1,3 @@
-import  {useState} from 'react'
 import project1 from '../videos/1.mp4'
 import project2 from '../videos/2.mp4'
 import project3 from '../videos/3.mp4'
@@ -9,7 +8,6 @@ import styles from '../styles/projects.module.scss'
 
 const Projects = ({darkMode}) => {
    
-  const projects = [project1,project2,project3]
  
   return (
     <div id='featuredProducts' 
@@ -32,6 +30,7 @@ const Projects = ({darkMode}) => {
           <a 
             href="https://landingpage-elevvo.vercel.app/"
             target='_blank'
+            rel="noreferrer"
             >
 
               <button>Live Demo</button>
@@ -51,6 +50,7 @@ const Projects = ({darkMode}) => {
          <a 
             href="https://faq-4fsj.vercel.app/"
             target='_blank'
+            rel="noreferrer"
             >
 
               <button>Live Demo</button>
@@ -69,6 +69,7 @@ const Projects = ({darkMode}) => {
           <a 
             href="https://front-end-website-eight.vercel.app/"
             target='_blank'
+            rel="noreferrer"
             >
 
               <button>Live Demo</button>
@@ -87,6 +88,7 @@ const Projects = ({darkMode}) => {
           <a 
             href="https://restaurant-menu-seven-gamma.vercel.app/"
             target='_blank'
+            rel="noreferrer"
             >
 
               <button>Live Demo</button>
@@ -106,6 +108,7 @@ const Projects = ({darkMode}) => {
          <a 
             href="https://front-end-three-henna.vercel.app/"
             target='_blank'
+            rel="noreferrer"
             >
 
               <button>Live Demo</button>

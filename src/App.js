@@ -5,7 +5,7 @@ import Skills from './components/skills'
 import Education from './components/education'
 import Footer from './components/footer'
 import Projects from './components/projects'
-import { useState , useEffect } from 'react'
+import { useState } from 'react'
 
 import Softskills from './components/softskills'
 
