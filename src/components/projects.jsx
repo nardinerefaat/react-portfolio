@@ -3,6 +3,8 @@ import project2 from '../videos/2.mp4'
 import project3 from '../videos/3.mp4'
 import project4 from '../videos/4.mp4'
 import project5 from '../videos/5.mp4'
+import project6 from '../videos/6.mp4'
+import project7 from '../videos/7.mp4'
 
 import styles from '../styles/projects.module.scss'
 
@@ -20,7 +22,7 @@ const Projects = ({darkMode}) => {
         <div className={`${styles.container}
         ${darkMode?styles.darkMode:styles.item}
         `}>
-          <h4>Front-End</h4>
+          <h4>Tech E-commerce</h4>
           <div 
              >
               <video  autoPlay muted loop  className={`${styles.item} `}>
@@ -37,18 +39,18 @@ const Projects = ({darkMode}) => {
           </a>
             
         </div>
-         <div className={`${styles.container}
+        <div className={`${styles.container}
         ${darkMode?styles.darkMode:styles.item}
         `}>
-          <h4>Front-End</h4>
-          <div>
-              <video autoPlay muted loop  className={`${styles.item} `}>
-                <source src={project4} type="video/mp4"/>
+          <h4>Text Editor</h4>
+          <div 
+             >
+              <video  autoPlay muted loop  className={`${styles.item} `}>
+                <source src={project6} type="video/mp4"/>
               </video>
-          </div>
-
-         <a 
-            href="https://faq-4fsj.vercel.app/"
+          </div> 
+          <a 
+            href="https://text-editor-beta-nine.vercel.app/"
             target='_blank'
             rel="noreferrer"
             >
@@ -60,7 +62,50 @@ const Projects = ({darkMode}) => {
         <div className={`${styles.container}
         ${darkMode?styles.darkMode:styles.item}
         `}>
-          <h4>Front-End</h4>
+          <h4>Quote Generator</h4>
+          <div 
+             >
+              <video  autoPlay muted loop  className={`${styles.item} `}>
+                <source src={project7} type="video/mp4"/>
+              </video>
+          </div> 
+          <a 
+            href="https://quotegenerator-phi-two.vercel.app/"
+            target='_blank'
+            rel="noreferrer"
+            >
+
+              <button>Live Demo</button>
+          </a>
+            
+        </div>
+
+
+
+
+        <div className={`${styles.container}
+        ${darkMode?styles.darkMode:styles.item}
+        `}>
+          <h4>FAQ Page</h4>
+          <div>
+              <video autoPlay muted loop  className={`${styles.item} `}>
+                <source src={project4} type="video/mp4"/>
+              </video>
+          </div>
+
+         <a 
+            href="https://faq-4fsj.vercel.app/"
+            target='_blank'
+            rel="noreferrer"
+            >
+              <button>Live Demo</button>
+          </a>
+            
+        </div>
+        <div className={`${styles.container}
+        ${darkMode?styles.darkMode:styles.item}
+        `}>
+          <h4>Team Designers Website</h4>
           <div>
               <video   autoPlay muted loop  className={`${styles.item} `}>
                 <source src={project2} type="video/mp4"/>
@@ -79,7 +124,7 @@ const Projects = ({darkMode}) => {
         <div className={`${styles.container}
         ${darkMode?styles.darkMode:styles.item}
         `}>
-          <h4>Front-End</h4>
+          <h4>Restaurant Menu</h4>
           <div>
               <video   autoPlay muted loop  className={`${styles.item} `}>
                 <source src={project5} type="video/mp4"/>
@@ -98,7 +143,7 @@ const Projects = ({darkMode}) => {
         <div className={`${styles.container}
         ${darkMode?styles.darkMode:styles.item}
         `}>
-          <h4>Front-End</h4>
+          <h4>E-commerce cosmetics</h4>
           <div>
               <video autoPlay muted loop  className={`${styles.item} `}>
                 <source src={project3} type="video/mp4"/>
