@@ -5,7 +5,7 @@ import sass from '../images/sass.png'
 import js from '../images/js.png'
 import react from '../images/react.png'
 import bs from '../images/bs.png'
-import ts from '../images/ts.png'
+// import ts from '../images/ts.png'
 import numpy from '../images/numpy.png'
 import yolo from '../images/yolo.png'
 import py from '../images/python.png'
@@ -18,18 +18,10 @@ import kaggle from '../images/kaggle.png'
 import cvat from '../images/cvat.png'
 
 const Skills = ({darkMode}) => {
- 
-
- 
-
-  const frontend = [html,css,sass,js,react,bs,ts]
+  const frontend = [html,css,sass,js,react,bs]
   const ai = [numpy,yolo,py,tf,pytorch]
   const tools = [vs,github,colab,kaggle,cvat]
- 
-
-    
-
-
+  
   return (
     <div id='featuredProducts' 
       className={`${styles.feature} 
@@ -45,11 +37,12 @@ const Skills = ({darkMode}) => {
           <h4>Front-End</h4>
           {frontend.map((item)=>(
             <div 
-                key={item.id} 
-                className={`${styles.item} 
-                `  
-              }       
-            >
+            key={item.id} 
+            className={`${styles.item} 
+            `  
+          }       
+          >      
+           
               <img src={item} alt={item.title} />
             
             </div> 

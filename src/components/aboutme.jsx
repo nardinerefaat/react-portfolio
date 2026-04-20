@@ -1,6 +1,8 @@
 import styles from "../styles/home.module.scss"
 import img from "../images/1.jpg"
 import cv from '../pdf/cv.pdf'
+import { motion } from "framer-motion";
+
 const AboutMe = ({ darkMode }) => {
 
 
@@ -14,7 +16,7 @@ const AboutMe = ({ darkMode }) => {
 
         <div className={styles.text}>
           <h1>
-            Hello, I am Nardine Refaat, <br/>
+            Hello 👋, I am Nardine Refaat, <br/>
             FrontEnd React Developer
           </h1>
           <p>
@@ -46,7 +48,7 @@ const AboutMe = ({ darkMode }) => {
             href={cv}
             target="_blank"
             rel="noopener noreferrer"
-            download="Nardine Refaat CV"
+            download="Nardine_Refaat_CV"
           >
             <button>Download CV</button>
           </a>

@@ -1,14 +1,15 @@
 .mainContainer{
     margin: 0;
     padding-bottom: 20px;
+    background-color: #221e36;
     h1{
         padding: 100px  100px 0px 100px;
-    }
-    .container{
-    
+        text-align: center;
+      }
+      .container{
         padding: 20px;
         text-align: center;
-        background: linear-gradient(135deg,#5b66d6,#8a92ff , #d1d4ff);
+       
         margin: 20px 80px;
         border-radius: 10px;
         color: #fdfdfd;
@@ -31,22 +32,58 @@
         }
         .icon{
             font-size: 35px;
-            color: #3d4aa8;
+            color: #dddddd;
            
     
         }
         h4::after{
-    
             content:"";
             display:block;
             width:60px;
             height:4px;
-            background: #5b65d6c9;
+            background: #2a2540;
             margin:10px auto;
             border-radius:5px;
         }
     }
     
      
+     
 }
 
+.lightMode {
+  background-color: #F7F7FF !important;
+  h1,
+  h4,
+  p,
+  span {
+    color: #2a2540 !important;
+  }
+  
+  .icon{
+     color: #2a2540 !important;
+
+   }
+  .card {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+    max-width: 700px;
+    margin: 20px auto ;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #F7F7FF !important;
+    backdrop-filter: blur(15px);
+  }
+}
+
+.card {
+  max-width: 700px;
+  margin: 20px auto ;
+  padding: 30px;
+  border-radius: 20px;
+  background: #1b172d;
+  backdrop-filter: blur(15px);
+  &:hover{
+    
+    transform: scale(1.05);
+  }
+}

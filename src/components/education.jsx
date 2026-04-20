@@ -9,15 +9,16 @@ const Education = ({darkMode}) => {
     <div
         className={`
           ${styles.mainContainer}
-          ${darkMode?"darkMode" : ""}`} 
+           ${darkMode?"":styles.lightMode}`} 
         >
     <h1>Education</h1>
     <div 
-      className={`${styles.container}`} 
+      className={`${styles.container}
+       ${darkMode?"":styles.lightMode}`
+    } 
       >
-      {/* <h3>Education</h3> */}
-      <div className={styles.items}>
-        <div>
+      <div className={styles.section}>
+        <div className={styles.card}>
           <MdCastForEducation className={styles.icon}/>
           <h4>Education</h4>
           <p><b>2020 - 2025 </b><br />
@@ -25,7 +26,7 @@ const Education = ({darkMode}) => {
             Faculty Of Engineering Alexandria University
             Communication And Electronics department</p>
         </div>
-        <div>
+        <div className={styles.card}>
           <MdModelTraining className={styles.icon}/>
           <h4>Courses</h4>
           <p>
