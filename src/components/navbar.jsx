@@ -56,7 +56,6 @@ const Navbar = ({ darkMode, handleDarkMode }) => {
         />
       </nav>
 
-      {/* MOBILE MENU (NO conditional render → smooth animation) */}
       <div
         className={`${styles.mobileMenu} ${open ? styles.open : ""} ${
           darkMode ? styles.darkMode : ""
