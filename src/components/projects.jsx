@@ -125,7 +125,7 @@ const Projects = ({ darkMode }) => {
             <h4>{project.title}</h4>
 
             <video autoPlay muted loop className={styles.video}>
-              <source src={project.video} type="video/mp4" />
+              <source src={project.video} type="video/mp4" muted loop/>
             </video>
 
             <a href={project.link} target="_blank" rel="noreferrer">
