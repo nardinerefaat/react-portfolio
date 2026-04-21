@@ -1,58 +1,40 @@
-import { MdCastForEducation } from "react-icons/md";
-import { MdModelTraining } from "react-icons/md";
+import { MdCastForEducation, MdModelTraining } from "react-icons/md";
+import styles from "../styles/education.module.scss";
 
-
-import styles from '../styles/education.module.scss'
-
-const Education = ({darkMode}) => {
+const Education = ({ darkMode }) => {
   return (
-    <div
-        className={`
-          ${styles.mainContainer}
-           ${darkMode?"":styles.lightMode}`} 
-        >
-    <h1>Education</h1>
-    <div 
-      className={`${styles.container}
-       ${darkMode?"":styles.lightMode}`
-    } 
-      >
-      <div className={styles.section}>
+    <div className={`${styles.mainContainer} ${darkMode ? styles.dark : ""}`}>
+
+      <h1>Education</h1>
+
+      <div className={styles.container}>
+
         <div className={styles.card}>
-          <MdCastForEducation className={styles.icon}/>
+          <MdCastForEducation className={styles.icon} />
           <h4>Education</h4>
-          <p><b>2020 - 2025 </b><br />
-            Bachelor Degree
-            Faculty Of Engineering Alexandria University
-            Communication And Electronics department</p>
+
+          <p>
+            <b>2020 - 2025</b><br />
+            Bachelor of Engineering<br />
+            Faculty of Engineering, Alexandria University<br />
+            Communication & Electronics Department
+          </p>
         </div>
+
         <div className={styles.card}>
-          <MdModelTraining className={styles.icon}/>
+          <MdModelTraining className={styles.icon} />
           <h4>Courses</h4>
-          <p>
-            <b>Web Development</b><br />
-            Itida & Ministry Of Communication - Alexandria, Egypt
-          </p>
-          <p>
-            <b>Full Stack course</b> <br />
-            MEC Academy - Cairo, Egypt (Online)
-          </p>
-          <p>
-            <b>Machine Learning </b> <br />
-            MEC Academy - Cairo, Egypt (Online)
-          </p>
-          <p>
-            <b>Trainee At National Telecommunication Institute (NTI)
-            </b> <br />
-           NTI - Alexandria, Egypt
-          </p>
+
+          <p><b>Web Development</b> - ITIDA</p>
+          <p><b>Full Stack</b> - MEC Academy</p>
+          <p><b>Machine Learning</b> - MEC Academy</p>
+          <p><b>NTI Training</b> - National Telecom Institute</p>
+
         </div>
-        
+
       </div>
     </div>
-</div>
-  )
-}
+  );
+};
 
-export default Education
-
+export default Education;
