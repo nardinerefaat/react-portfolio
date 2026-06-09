@@ -7,39 +7,56 @@
 }
 
 body {
-  font-family: Quicksand;
-  font-weight: 550;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
   overflow-x: hidden;
-  background-color: #f7f7ff;
+  background: radial-gradient(circle at top left, rgba(247,247,255,1) 0%, rgba(241,245,255,1) 38%, rgba(247,247,255,1) 100%);
   color: #1b1b1b;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Layout */
 .layout {
   min-height: 100vh;
   transition: background-color 0.4s ease, color 0.4s ease;
+  background: radial-gradient(circle at top left, rgba(247,247,255,1) 0%, rgba(241,245,255,1) 38%, rgba(247,247,255,1) 100%);
+}
+
+.layout.dark {
+  background: radial-gradient(circle at top left, #12162f 0%, #0f1321 42%, #090c17 100%);
 }
 
 .content {
-  width: 100%;
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding-top: 92px;
 }
 
-/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* Global heading style (LIGHT touch only, NOT aggressive) */
-h1 {
+h1,
+h2,
+h3,
+h4 {
   letter-spacing: 0.5px;
 }
 
-/* DARK MODE ROOT */
+section {
+  position: relative;
+}
+
 .dark {
-  background-color: #0f0f1a;
   color: #f5f5f5;
 }
 
+.layout.dark p,
+.layout.dark a,
+.layout.dark span,
+.layout.dark li {
+  color: #d9dcff;
+}
 
 .dark p {
   color: #c9d1ff;

@@ -1,6 +1,6 @@
 # Nardine Refaat - Portfolio Website
  
-A modern, responsive portfolio website built with React showcasing projects, skills, and professional experience as a Frontend Developer.
+A modern, responsive portfolio website built with React showcasing projects, skills, and professional experience as an AI Engineer.
  
 ## Features
  
@@ -13,7 +13,16 @@ A modern, responsive portfolio website built with React showcasing projects, ski
 - **Soft Skills Highlight** - Personal strengths and competencies
 - **Smooth Scrolling** - Seamless navigation between sections
 - **Modern UI/UX** - Clean, professional design with SCSS styling
- 
+
+## Technical Skills
+
+- **Programming:** Python, JavaScript (ES6+), modular coding, object-oriented design
+- **AI & ML:** Machine learning, deep learning, NLP, LLM fundamentals, data preprocessing, feature engineering, model evaluation, real-time inference
+- **Libraries & Frameworks:** NumPy, Pandas, Scikit-learn, TensorFlow, PyTorch, Streamlit, imbalanced-learn
+- **Data Engineering:** Apache Kafka, event-driven architecture, streaming pipelines, Kafka producers/consumers, scalable data flow
+- **Frontend:** React.js, Bootstrap 5, responsive web design, modern SPA development, performance optimization
+- **Tools & Workflow:** Git, GitHub, VS Code, Jupyter Notebook, Kaggle, Vercel, collaborative development
+
 ## Tech Stack
  
 ### Frontend
@@ -208,8 +217,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
  
 ---
  
-Built with passion and modern web technologies. Available for Frontend Developer opportunities!
-# Portfolio Website - React Frontend Developer
+Built with passion and modern web technologies. Available for AI Engineer opportunities!
+# Portfolio Website - AI Engineer
  
 A high-performance portfolio application demonstrating advanced React architecture with component-based design, state management, and optimized rendering. Built with React 19, Framer Motion animations, and SCSS modules for scalable, maintainable code.
  

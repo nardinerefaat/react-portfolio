@@ -7,9 +7,54 @@ import project4 from "../videos/4.mp4";
 import project5 from "../videos/5.mp4";
 import project6 from "../videos/6.mp4";
 import project7 from "../videos/7.mp4";
+import project8 from "../videos/8.mp4";
+import project9 from "../videos/9.mp4";
+import optiImage from "../images/opti.jpeg";
 import { useState } from "react";
 const Projects = ({ darkMode }) => {
   const projects = [
+  {
+    title: "Handwritten Character Recognition AI",
+    video: project8,
+    link: "https://handwritten-character-recognition-niky6fmwsv52hxjlcqsfss.streamlit.app/",
+    desc:`An AI-powered handwritten character recognition application built with Streamlit.
+          This project demonstrates computer vision, model inference, and an intuitive user experience for recognizing handwritten inputs.
+          It highlights AI engineering skills in deployment and web-based model interaction.`,
+    keyFeatures:`
+          Real-time handwriting recognition
+          , Computer vision model deployment
+          , Streamlit interface for fast experimentation
+          , User-friendly AI-driven input handling.`,
+    techStack:`Python, Streamlit, OpenCV, Machine Learning, Computer Vision`
+  },
+  {
+    title: "Kafka AI Routing Model",
+    video: project9,
+    desc:`Developed a real-time AI routing engine using Apache Kafka streaming and machine learning.
+          Trained a Random Forest model and implemented inference through Kafka consumers for low-latency routing.
+          This project focuses on scalable data pipelines and real-time AI-driven decision making.
+          It does not have a public live server demo.`,
+    keyFeatures:`Real-time Kafka streaming
+          , Random Forest model inference
+          , Scalable event-driven routing
+          , Low-latency AI decision pipeline.`,
+    techStack:`Python, Apache Kafka, Scikit-learn, Kafka Consumers, Real-time Streaming`
+  },
+  {
+    title: "Smart Glass Graduation Project",
+    image: optiImage,
+    link: "https://www.linkedin.com/posts/nardine-refaat-783286290_opti-yolo-objectdetection-ugcPost-7355941052136013824-ig_V/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEaFDNMBEhioYyz9AaFCuZYbARKKNtKjBic",
+    desc:`Contributed to a smart assistive application for visually impaired users as a graduation project.
+          Participated in solving real-world technical challenges and integrating multiple AI modules.
+          Connected object detection, face recognition, and currency recognition with asynchronous processing for lower latency.
+          Optimized performance for fast and reliable operation on mobile hardware.`,
+    keyFeatures:`Object detection module development
+          , Face recognition integration
+          , Currency recognition support
+          , Asynchronous low-latency AI pipeline
+          , Mobile hardware performance optimization.`,
+    techStack:`Python, YOLO, Object Detection, Face Recognition, Asynchronous AI Systems`
+  },
   {
     title: "Tech E-commerce",
     video: project1,
@@ -124,14 +169,24 @@ const Projects = ({ darkMode }) => {
             
             <h4>{project.title}</h4>
 
-            <video autoPlay muted loop className={styles.video}>
-              <source src={project.video} type="video/mp4" muted loop/>
-            </video>
+            {project.image ? (
+              <img src={project.image} alt={project.title} className={styles.video} />
+            ) : (
+              <video autoPlay muted loop className={styles.video}>
+                <source src={project.video} type="video/mp4" muted loop/>
+              </video>
+            )}
 
-            <a href={project.link} target="_blank" rel="noreferrer">
-              <button>Live Demo</button>
-            </a>
-              <button onClick={()=>handleShowDesc(index)}>Description</button>
+            {project.link ? (
+              <a href={project.link} target="_blank" rel="noreferrer">
+                <button>Live Demo</button>
+              </a>
+            ) : (
+              <button disabled className={styles.disabledButton}>
+                No live demo
+              </button>
+            )}
+            <button onClick={()=>handleShowDesc(index)}>Description</button>
               
               <AnimatePresence mode="wait">
               {activeIndex=== index &&(

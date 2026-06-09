@@ -3,111 +3,152 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 70px;
-  background: white;
+  height: 76px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 40px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 0 34px;
+  border-bottom: 1px solid rgba(93, 101, 171, 0.12);
   z-index: 1000;
-  transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease, border-color 0.4s ease;
 }
 
-/* LOGO */
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-family: Audiowide;
+  gap: 12px;
+  font-family: 'Audiowide', sans-serif;
 
   h4 {
-    font-size: 16px;
-    background: linear-gradient(#3d4aa8, #5b66d6, #d1d4ff);
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    background: linear-gradient(135deg, #4f5aec, #92a0ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
   }
 
   .icon {
     font-size: 22px;
-    color: #5b66d6;
+    color: #4f5aec;
   }
 
   .darkIcon {
     font-size: 22px;
     cursor: pointer;
-    margin-left: 10px;
-    color: #5b66d6;
+    margin-left: 12px;
+    color: #4f5aec;
+    transition: color 0.3s ease;
   }
 }
 
- 
 .links {
   display: flex;
-  gap: 25px;
+  gap: 28px;
 
   a {
     text-decoration: none;
-    color: #0f0f1a;
-    font-weight: 500;
+    color: #1c1d37;
+    font-weight: 600;
     position: relative;
     cursor: pointer;
-    transition: 0.3s;
+    transition: color 0.3s ease;
 
     &:hover {
-      color: #5b66d6;
+      color: #4f5aec;
     }
   }
 }
 
-
 .active {
-  color: #5b66d6;
+  color: #4f5aec;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -4px;
+    bottom: -6px;
     left: 0;
     width: 100%;
-    height: 2px;
-    background: #5b66d6;
+    height: 3px;
+    border-radius: 999px;
+    background: #4f5aec;
   }
 }
 
-/* MOBILE ICON */
 .menuIcon {
   display: none;
   font-size: 28px;
   cursor: pointer;
+  color: #4f5aec;
 }
 
-/* DARK MODE */
 .darkMode {
-  background-color: #0f0f1a;
+  background: rgba(15, 15, 26, 0.92);
+  border-bottom-color: rgba(138, 146, 255, 0.16);
 
   .links a {
-    color: #c9d1ff;
+    color: #d7dcff;
 
     &:hover {
       color: #8a92ff;
     }
   }
 
-  
-
   .darkIcon {
     color: #8a92ff;
   }
-  h4{
-    background: linear-gradient(#5b66d6, #d1d4ff);
+
+  h4 {
+    background: linear-gradient(135deg, #92a0ff, #d1d4ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 }
 
-/* RESPONSIVE */
+.mobileMenu {
+  position: fixed;
+  top: 76px;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.96);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 22px 28px;
+  transform: translateY(-110%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+
+  a {
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: #1b1b1b;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      color: #4f5aec !important;
+    }
+  }
+}
+
+.open {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.darkMode.mobileMenu {
+  background: rgba(15, 15, 26, 0.96);
+
+  a {
+    color: #d7dcff;
+  }
+}
+
 @media (max-width: 1024px) {
   .links {
     display: none;
@@ -115,52 +156,5 @@
 
   .menuIcon {
     display: block;
-  }
-}
-
-/* MOBILE MENU */
-.mobileMenu {
-  position: fixed;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-
-  transform: translateY(-100%);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.4s ease;
-  z-index: 999;
-  
-  a {
-    transition: 0.3s;
-    text-decoration: none;
-    color: #1b1b1b;
-    font-weight: 500;
-    cursor: pointer;
-    &:hover{
-      color: #8a92ff !important;
-      
-    }
-  }
-}
-
- 
-.open {
-  transform: translateY(0);
-  opacity: 1;
-  visibility: visible;
-}
-
- 
-.darkMode.mobileMenu {
-  background: #0f0f1a;
-
-  a {
-    color: #c9d1ff;
   }
 }
